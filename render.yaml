@@ -7,6 +7,8 @@ services:
     envVars:
       - key: MODEL_PATH
         value: model_dr.onnx
+      - key: PYTHON_VERSION
+        value: 3.11.0
     disk:
       name: model-storage
       mountPath: /opt/render/project/src
